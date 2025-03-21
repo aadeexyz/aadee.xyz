@@ -1,14 +1,14 @@
-import { ExternalLink } from "lucide-react";
-
 export default function HomePage() {
     return (
         <div>
             <div className="p-12 space-y-4">
-                <h2 className="text-foreground font-semibold text-lg">WhoAmI</h2>
+                <h2 className="text-foreground font-semibold text-lg">
+                    WhoAmI
+                </h2>
 
                 <p>
-                    I'm a developer who loves tinkering around with Blockchain
-                    and Generative AI. Currently I'm exploring privacy
+                    {"I'm"} a developer who loves tinkering around with Blockchain
+                    and Generative AI. Currently {"I'm"} exploring privacy
                     preserving technologies like{" "}
                     <a
                         className="border border-dashed px-1 hover:border-foreground transition-colors text-foreground hover:bg-muted"
@@ -145,7 +145,9 @@ export default function HomePage() {
             <div className="w-screen relative left-1/2 -translate-x-1/2 border-t border-dashed" />
 
             <div className="px-12 space-y-4 py-12">
-                <h2 className="text-foreground font-semibold text-lg">Experiments</h2>
+                <h2 className="text-foreground font-semibold text-lg">
+                    Experiments
+                </h2>
 
                 <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
                     <div className="container">
