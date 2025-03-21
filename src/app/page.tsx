@@ -75,7 +75,7 @@ export default function HomePage() {
                     >
                         Scroll Open
                     </a>
-                    . During the hackathon me and friend built{" "}
+                    . During the hackathon me and my friend built{" "}
                     <a
                         className="border border-dashed px-1 hover:border-foreground transition-colors text-foreground hover:bg-muted"
                         href="https://desync.fi"
@@ -85,7 +85,7 @@ export default function HomePage() {
                         deSync
                     </a>{" "}
                     - a zero-interest lending platform. Post hackathon most of
-                    my time is spent on makign deSync better as well as
+                    my time is spent on making deSync better as well as
                     exploring new ideas.
                 </p>
             </div>
