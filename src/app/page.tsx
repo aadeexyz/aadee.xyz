@@ -104,14 +104,19 @@ export default function HomePage() {
                                         Open Economy Collab
                                     </h3>
 
-                                    <p>A place for builders to find and be found</p>
+                                    <p>
+                                        A place for builders to find and be
+                                        found
+                                    </p>
                                 </div>
 
                                 <p>Website</p>
                             </a>
                         </div>
                     </div>
+                </div>
 
+                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
                     <div className="container">
                         <a
                             className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
