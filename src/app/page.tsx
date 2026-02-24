@@ -7,52 +7,16 @@ export default function HomePage() {
                 </h2>
 
                 <p>
-                    {"I'm"} a developer who loves tinkering around with Blockchain
-                    and Generative AI. Currently {"I'm"} exploring privacy
-                    preserving technologies like{" "}
+                    {"I'm"} a developer who loves tinkering around with
+                    Blockchain. Currently building real time trading systems. I
+                    was part of{" "}
                     <a
                         className="border border-dashed px-1 hover:border-foreground transition-colors text-foreground hover:bg-muted"
-                        href="https://zkp.science"
+                        href="https://openeconomy.xyz/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        ZKP
-                    </a>
-                    ,{" "}
-                    <a
-                        className="border border-dashed px-1 hover:border-foreground transition-colors text-foreground hover:bg-muted"
-                        href="https://www.fireblocks.com/what-is-mpc/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        MPC
-                    </a>
-                    ,{" "}
-                    <a
-                        className="border border-dashed px-1 hover:border-foreground transition-colors text-foreground hover:bg-muted"
-                        href="https://www.zama.ai/introduction-to-homomorphic-encryption"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        FHE
-                    </a>
-                    ,{" "}
-                    <a
-                        className="border border-dashed px-1 hover:border-foreground transition-colors text-foreground hover:bg-muted"
-                        href="https://mirror.xyz/pvnzpvnz.eth/0S2aVa9McHZtIpKadfDxmu0axv28z4H60vSJKx_Hkag"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        NMC
-                    </a>{" "}
-                    and,{" "}
-                    <a
-                        className="border border-dashed px-1 hover:border-foreground transition-colors text-foreground hover:bg-muted"
-                        href="https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        TEE
+                        Open Campus S1
                     </a>
                     .
                 </p>
@@ -66,27 +30,35 @@ export default function HomePage() {
                 </h2>
 
                 <p>
-                    Recently I participated in{" "}
+                    Currently {"I'm"} exploring privacy preserving technologies
+                    like{" "}
                     <a
                         className="border border-dashed px-1 hover:border-foreground transition-colors text-foreground hover:bg-muted"
-                        href="https://open.scroll.io/"
+                        href="https://zkp.science"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Scroll Open
+                        ZKP
                     </a>
-                    . During the hackathon me and my friend built{" "}
+                    ,{" "}
                     <a
                         className="border border-dashed px-1 hover:border-foreground transition-colors text-foreground hover:bg-muted"
-                        href="https://desync.fi"
+                        href="https://www.zama.ai/introduction-to-homomorphic-encryption"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        deSync
-                    </a>{" "}
-                    - a zero-interest lending platform. Post hackathon most of
-                    my time is spent on making deSync better as well as
-                    exploring new ideas.
+                        FHE
+                    </a>
+                    , and,{" "}
+                    <a
+                        className="border border-dashed px-1 hover:border-foreground transition-colors text-foreground hover:bg-muted"
+                        href="https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        TEE
+                    </a>
+                    . Also looking into prediction markets in my free time.
                 </p>
             </div>
 
@@ -140,6 +112,27 @@ export default function HomePage() {
                         </a>
                     </div>
                 </div>
+
+                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
+                    <div className="container">
+                        <a
+                            className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
+                            href="https://tactus.aadee.xyz"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="flex flex-col items-start space-y-2">
+                                <h3 className="text-foreground font-medium">
+                                    Tactus
+                                </h3>
+
+                                <p>Add haptic feedbac to your website</p>
+                            </div>
+
+                            <p>Website</p>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div className="w-screen relative left-1/2 -translate-x-1/2 border-t border-dashed" />
@@ -153,16 +146,19 @@ export default function HomePage() {
                     <div className="container">
                         <a
                             className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                            href="https://github.com/aadeexyz/aptos-vault"
+                            href="https://github.com/aadeexyz/orbital"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <div className="flex flex-col items-start space-y-2">
                                 <h3 className="text-foreground font-medium">
-                                    Aptos Vault
+                                    Orbital
                                 </h3>
 
-                                <p>Token vault on Aptos network</p>
+                                <p>
+                                    An AMM with concentrated liquidity for pools
+                                    of 2, 3, or 10,000 stablecoins
+                                </p>
                             </div>
 
                             <p>github</p>
@@ -174,16 +170,19 @@ export default function HomePage() {
                     <div className="container">
                         <a
                             className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                            href="https://github.com/aadeexyz/event-staking"
+                            href="https://github.com/aadeexyz/tactus"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <div className="flex flex-col items-start space-y-2">
                                 <h3 className="text-foreground font-medium">
-                                    Event Staking
+                                    Tactus
                                 </h3>
 
-                                <p>Stake tokens to RSVP for an event</p>
+                                <p>
+                                    Add native-like haptic feedback to any web
+                                    app.
+                                </p>
                             </div>
 
                             <p>github</p>
@@ -195,16 +194,19 @@ export default function HomePage() {
                     <div className="container">
                         <a
                             className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                            href="https://github.com/aadeexyz/aptos-nft-api"
+                            href="https://github.com/aadeexyz/erc-8004"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <div className="flex flex-col items-start space-y-2">
                                 <h3 className="text-foreground font-medium">
-                                    Aptos NFT Api
+                                    ERC-8004
                                 </h3>
 
-                                <p>Express API to fetch Apots NFT data</p>
+                                <p>
+                                    Reference implementation for ERC-8004:
+                                    Trustless Agents
+                                </p>
                             </div>
 
                             <p>GitHub</p>
@@ -228,30 +230,6 @@ export default function HomePage() {
                                 <p>
                                     Allows the owner of an NFT to rent it out
                                     for a fixed period
-                                </p>
-                            </div>
-
-                            <p>github</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
-                    <div className="container">
-                        <a
-                            className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                            href="https://github.com/aadeexyz/sudoku"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <div className="flex flex-col items-start space-y-2">
-                                <h3 className="text-foreground font-medium">
-                                    Sudoku Onchain
-                                </h3>
-
-                                <p>
-                                    Create and challenege other players to solve
-                                    your sudoku onchain
                                 </p>
                             </div>
 
