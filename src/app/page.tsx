@@ -1,3 +1,51 @@
+const projects = [
+    {
+        name: "Tactus",
+        description: "Add haptic feedback to your website",
+        link: "https://tactus.aadee.xyz",
+    },
+    {
+        name: "Open Economy Collab",
+        description: "A place for builders to find and be found",
+        link: "https://collab.openeconomy.xyz/",
+    },
+    {
+        name: "deSync",
+        description: "Zero-Interest Lending Platform",
+        link: "https://desync.fi",
+    },
+    {
+        name: "TryOnMe",
+        description: "Virtual Try On using Diffusion based models",
+        link: "https://tryonme.co",
+    },
+];
+
+const experiments = [
+    {
+        name: "Orbital",
+        description:
+            "An AMM with concentrated liquidity for pools of 2, 3, or 10,000 stablecoins",
+        link: "https://github.com/aadeexyz/orbital",
+    },
+    {
+        name: "Tactus",
+        description: "Add native-like haptic feedback to any web app.",
+        link: "https://github.com/aadeexyz/tactus",
+    },
+    {
+        name: "ERC-8004",
+        description: "Reference implementation for ERC-8004: Trustless Agents",
+        link: "https://github.com/aadeexyz/erc-8004",
+    },
+    {
+        name: "Rentable NFT",
+        description:
+            "Allows the owner of an NFT to rent it out for a fixed period",
+        link: "https://github.com/aadeexyz/rentable-nfts",
+    },
+];
+
 export default function HomePage() {
     return (
         <div>
@@ -69,93 +117,33 @@ export default function HomePage() {
                     Projects
                 </h2>
 
-                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
-                    <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
-                        <div className="container">
-                            <a
-                                className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                                href="https://tactus.aadee.xyz"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div className="flex flex-col items-start space-y-2">
-                                    <h3 className="text-foreground font-medium">
-                                        Tactus
-                                    </h3>
+                {projects.map((project, index) => (
+                    <div
+                        className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background"
+                        key={index}
+                    >
+                        <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
+                            <div className="container">
+                                <a
+                                    className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <div className="flex flex-col items-start space-y-2">
+                                        <h3 className="text-foreground font-medium">
+                                            {project.name}
+                                        </h3>
 
-                                    <p>Add haptic feedbac to your website</p>
-                                </div>
+                                        <p>{project.description}</p>
+                                    </div>
 
-                                <p>Website</p>
-                            </a>
+                                    <p>Website</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
-                    <div className="container">
-                        <a
-                            className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                            href="https://collab.openeconomy.xyz/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <div className="flex flex-col items-start space-y-2">
-                                <h3 className="text-foreground font-medium">
-                                    Open Economy Collab
-                                </h3>
-
-                                <p>A place for builders to find and be found</p>
-                            </div>
-
-                            <p>Website</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
-                    <div className="container">
-                        <a
-                            className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                            href="https://desync.fi"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <div className="flex flex-col items-start space-y-2">
-                                <h3 className="text-foreground font-medium">
-                                    deSync
-                                </h3>
-
-                                <p>Zero-Interest Lending Platform</p>
-                            </div>
-
-                            <p>Website</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
-                    <div className="container">
-                        <a
-                            className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                            href="https://tryonme.co"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <div className="flex flex-col items-start space-y-2">
-                                <h3 className="text-foreground font-medium">
-                                    TryOnMe
-                                </h3>
-
-                                <p>
-                                    Virtual Try On using Diffusion based models
-                                </p>
-                            </div>
-
-                            <p>Website</p>
-                        </a>
-                    </div>
-                </div>
+                ))}
             </div>
 
             <div className="w-screen relative left-1/2 -translate-x-1/2 border-t border-dashed" />
@@ -165,101 +153,31 @@ export default function HomePage() {
                     Experiments
                 </h2>
 
-                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
-                    <div className="container">
-                        <a
-                            className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                            href="https://github.com/aadeexyz/orbital"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <div className="flex flex-col items-start space-y-2">
-                                <h3 className="text-foreground font-medium">
-                                    Orbital
-                                </h3>
+                {experiments.map((experiment, index) => (
+                    <div
+                        className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background"
+                        key={index}
+                    >
+                        <div className="container">
+                            <a
+                                className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
+                                href={experiment.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div className="flex flex-col items-start space-y-2">
+                                    <h3 className="text-foreground font-medium">
+                                        {experiment.name}
+                                    </h3>
 
-                                <p>
-                                    An AMM with concentrated liquidity for pools
-                                    of 2, 3, or 10,000 stablecoins
-                                </p>
-                            </div>
+                                    <p>{experiment.description}</p>
+                                </div>
 
-                            <p>github</p>
-                        </a>
+                                <p>github</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-
-                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
-                    <div className="container">
-                        <a
-                            className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                            href="https://github.com/aadeexyz/tactus"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <div className="flex flex-col items-start space-y-2">
-                                <h3 className="text-foreground font-medium">
-                                    Tactus
-                                </h3>
-
-                                <p>
-                                    Add native-like haptic feedback to any web
-                                    app.
-                                </p>
-                            </div>
-
-                            <p>github</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
-                    <div className="container">
-                        <a
-                            className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                            href="https://github.com/aadeexyz/erc-8004"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <div className="flex flex-col items-start space-y-2">
-                                <h3 className="text-foreground font-medium">
-                                    ERC-8004
-                                </h3>
-
-                                <p>
-                                    Reference implementation for ERC-8004:
-                                    Trustless Agents
-                                </p>
-                            </div>
-
-                            <p>GitHub</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
-                    <div className="container">
-                        <a
-                            className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                            href="https://github.com/aadeexyz/rentable-nfts"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <div className="flex flex-col items-start space-y-2">
-                                <h3 className="text-foreground font-medium">
-                                    Rentable NFT
-                                </h3>
-
-                                <p>
-                                    Allows the owner of an NFT to rent it out
-                                    for a fixed period
-                                </p>
-                            </div>
-
-                            <p>github</p>
-                        </a>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );
