@@ -90,29 +90,26 @@ export default function HomePage() {
                             </a>
                         </div>
                     </div>
+                </div>
 
-                    <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
-                        <div className="container">
-                            <a
-                                className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                                href="https://collab.openeconomy.xyz/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div className="flex flex-col items-start space-y-2">
-                                    <h3 className="text-foreground font-medium">
-                                        Open Economy Collab
-                                    </h3>
+                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
+                    <div className="container">
+                        <a
+                            className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
+                            href="https://collab.openeconomy.xyz/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="flex flex-col items-start space-y-2">
+                                <h3 className="text-foreground font-medium">
+                                    Open Economy Collab
+                                </h3>
 
-                                    <p>
-                                        A place for builders to find and be
-                                        found
-                                    </p>
-                                </div>
+                                <p>A place for builders to find and be found</p>
+                            </div>
 
-                                <p>Website</p>
-                            </a>
-                        </div>
+                            <p>Website</p>
+                        </a>
                     </div>
                 </div>
 
