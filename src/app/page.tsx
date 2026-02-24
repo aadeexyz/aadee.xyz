@@ -70,6 +70,27 @@ export default function HomePage() {
                 </h2>
 
                 <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
+                    <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
+                        <div className="container">
+                            <a
+                                className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
+                                href="https://tactus.aadee.xyz"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div className="flex flex-col items-start space-y-2">
+                                    <h3 className="text-foreground font-medium">
+                                        Tactus
+                                    </h3>
+
+                                    <p>Add haptic feedbac to your website</p>
+                                </div>
+
+                                <p>Website</p>
+                            </a>
+                        </div>
+                    </div>
+
                     <div className="container">
                         <a
                             className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
@@ -106,27 +127,6 @@ export default function HomePage() {
                                 <p>
                                     Virtual Try On using Diffusion based models
                                 </p>
-                            </div>
-
-                            <p>Website</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div className="w-screen relative left-1/2 -translate-x-1/2 flex justify-center bg-background">
-                    <div className="container">
-                        <a
-                            className="space-x-4 border border-dashed py-6 px-12 flex items-center justify-between hover:bg-muted hover:text-foreground hover:border-foreground transition-colors"
-                            href="https://tactus.aadee.xyz"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <div className="flex flex-col items-start space-y-2">
-                                <h3 className="text-foreground font-medium">
-                                    Tactus
-                                </h3>
-
-                                <p>Add haptic feedbac to your website</p>
                             </div>
 
                             <p>Website</p>
